@@ -1,0 +1,100 @@
+using System; Sytem.Console;
+
+/*
+Foreground = ConsoleColor.Cyan; Muda de cor a letra
+Background = ConsoleColor.DarkBlue; Muda de cor o fundo
+double numero = 1.73598597; Cria uma variavel do tipo double
+WriteLine($"Salario = R$ {numero:n}"); Escreve na tela o valor da variavel com duas casas decimais
+WriteLine("Hello" + " World"); Escreve na tela a frase Hello World
+*/
+
+-
+
+//Processamento de dados
+// Operadores Aritméticos
+int a = 1 + 1; //Op soma
+int b = 2 - 1; //Op Subtração
+int c = 3 * 1; //Op Multiplicação
+double d = 4 / 1; //Op Divisão
+double e = 2 * 2 * 2;//Op Potenciação
+double f = Math.Sqrt(4);//Op Raiz quadrada
+Math.Pow(2, 3); //Op Potenciação
+double k = 1 + (1 - (2 * 3)) / 4;
+double j = 2 % 2; //Módulo ou resto da divisão
+int y = 0;
+Console.WriteLine(y);
+y++; //Incremento em um
+Console.WriteLine(y);
+y--; //Decremento em um
+Console.WriteLine(y);
+y += 2; //Incremento em dois E atribuição
+y -= 2; //Decremento em dois E atribuição
+y *= 2; //Multiplicação por dois E atribuição
+y  /= 2; //Divisão por dois E atribuição
+y %= 2; //Módulo por dois E atribuição
+Console.WriteLine(y);
+
+//Entrada de dados
+Console.WriteLine ("Digite seu nome: "); 
+string nome = Console.ReadLine(); //Entrada de dados
+Console.WriteLine ("Digite sua idade: ");
+int idade = int.Parse (Console.ReadLine()); // Conversão de dados
+Console.Write("digite seu Salario: R$");
+double salario = double.Parse(Console.ReadLine()); 
+Console.WriteLine($"Olá {nome}, você tem {idade} anos, Salario = R ${ salario}");
+Console.ReadKey ();
+
+
+-
+
+
+Console.Title = "Calculos de terreno.)
+
+//Declaração de variaveis
+double largura;
+double comprimento;
+double area;
+double valor;
+double preco;
+
+//Entrada de dados
+Console.Write("Digite a largura do terreno em metros: ");
+largura = double.Parse(Console.ReadLine());
+Console.Write("Digite o comprimento do terreno em metros: ");
+comprimento = double.Parse(Console.ReadLine());
+Console.Write("Digite o valor do metro quadrado do terreno: ");
+valor = double.Parse(Console.ReadLine());
+
+//Processamento de dados
+area = largura * comprimento;
+preco = area * valor;
+
+//saída de dados
+Console.WriteLine($"A área do terreno é: {area:n}\nPreço do terreno: R$ {preco:n}");
+Console.ReadKey();
+
+-
+
+//Declaração das variavies
+double Base;
+double Altura;
+double Area;
+double Perimetro;
+double Diagonal;
+
+// Entrada de dados
+Console.Write("Digite o valor da base do retângulo: ");
+Base = double.Parse(Console.ReadLine());
+Console.Write("Digite o valor da altura do retângulo: ");
+Altura = double.Parse(Console.ReadLine());
+
+// Processamento de dados
+Area = Base * Altura;
+Perimetro = Base + Altura + Base + Altura;
+Diagonal = Math.Sqrt(Math.Pow(Base, 2) + Math.Pow(Altura, 2));
+
+// Saída de dados
+Console.WriteLine($"--Dados do Retânulo--\n" +
+                  $"Área: {Area.ToString("f4")}\n" +
+                  $"Perímetro: {Perimetro:f4}\n" +
+                  $"Diagonal: {Diagonal:n}\n");
