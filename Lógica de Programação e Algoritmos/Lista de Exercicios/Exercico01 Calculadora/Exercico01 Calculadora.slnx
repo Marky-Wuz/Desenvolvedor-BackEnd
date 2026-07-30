@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Calculo triangular/Calculo triangular.csproj" Id="0679c103-f13b-4d7b-8323-f2ac83c34e15" />
+  <Project Path="Calculo/Calculo.csproj" Id="d3f3df0f-04f8-45bf-9b6f-e43385793f22" />
+  <Project Path="Calendario automatico/Calendario automatico.csproj" Id="6a9157b7-db49-49a5-a881-c7c481dd3c28" />
+  <Project Path="Exercico01 Calculadora/Exercico01 Calculadora.csproj" />
+  <Project Path="Folha de pagamento/Folha de pagamento.csproj" Id="bec49fab-5485-4f89-99ed-199d4a3bf6f8" />
+</Solution>
