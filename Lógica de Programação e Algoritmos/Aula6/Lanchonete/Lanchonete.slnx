@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Lanchonete/Lanchonete.csproj" />
+  <Project Path="ParOuImpar/ParOuImpar.csproj" />
+  <Project Path="ParquedeDiversões/ParquedeDiversões.csproj" />
+  <Project Path="Tabuada/Tabuada.csproj" />
+</Solution>
