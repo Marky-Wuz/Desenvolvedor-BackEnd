@@ -1,6 +1,9 @@
 <Solution>
+  <Project Path="Crescente/Crescente.csproj" />
   <Project Path="Lanchonete/Lanchonete.csproj" />
   <Project Path="ParOuImpar/ParOuImpar.csproj" />
   <Project Path="ParquedeDiversões/ParquedeDiversões.csproj" />
+  <Project Path="Senha/Senha.csproj" />
+  <Project Path="sequencia/sequencia.csproj" />
   <Project Path="Tabuada/Tabuada.csproj" />
 </Solution>
