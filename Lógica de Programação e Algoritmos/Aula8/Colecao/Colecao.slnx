@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Colecao/colecao.csproj" />
+  <Project Path="Lanchonete1/lanchonete1.csproj" />
+  <Project Path="mais_velho/mais_velho.csproj" />
+  <Project Path="Negativos/negativos.csproj" />
+  <Project Path="Soma_Vetor/soma_vetor.csproj" />
+</Solution>
