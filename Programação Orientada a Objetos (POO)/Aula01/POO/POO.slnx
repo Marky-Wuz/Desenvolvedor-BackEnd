@@ -1,6 +1,6 @@
 <Solution>
-  <Project Path="POO2/POO2.csproj" />
-  <Project Path="POO3/POO3.csproj" />
-  <Project Path="Triangulo_Com_POO/Triangulo_Com_POO.csproj" />
-  <Project Path="Triangulo_Sem_POO/Triangulo_Sem_POO.csproj" />
+  <Project Path="POO2/POO2.csproj" Id="45eb5114-a7f0-4e8e-a53d-e441a389b7b9" />
+  <Project Path="POO3/POO3.csproj" Id="2f90df82-f5c5-478f-a313-9ea0f7a3881e" />
+  <Project Path="Triangulo_Com_POO/Triangulo_Com_POO.csproj" Id="08366344-0032-4976-8268-adb0e0080456" />
+  <Project Path="Triangulo_Sem_POO/Triangulo_Sem_POO.csproj" Id="60b3f0a2-f7a6-48e2-a394-f97548d354b2" />
 </Solution>

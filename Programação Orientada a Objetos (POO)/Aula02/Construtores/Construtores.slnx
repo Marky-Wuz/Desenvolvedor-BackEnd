@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="app1/app1.csproj" Id="54521920-4c1c-4058-b2c6-a3a5de41cde2" />
+  <Project Path="App2/App2.csproj" Id="75e8a7b0-ccce-466c-918f-dff36511f850" />
+  <Project Path="App3/App3.csproj" Id="a36375da-7275-4578-94a5-490afc689bde" />
+  <Project Path="Estoque/Estoque.csproj" />
+</Solution>
