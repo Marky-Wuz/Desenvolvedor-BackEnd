@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Biblioteca.Classes.Entidades.ItemBiblioteca">
+    <Position X="3" Y="0.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAACAAAAAAAAAAAgAAAAAAAAQAAAAAQAAQEAAAEBA=</HashCode>
+      <FileName>Classes\Entidades\ItemBiblioteca.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.179" />
+  </Class>
+  <Class Name="Biblioteca.Classes.Entidades.Livro">
+    <Position X="0.75" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAIAAAAAAAAQAAAAAAAQAAAAIAAA=</HashCode>
+      <FileName>Classes\Entidades\Livro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biblioteca.Classes.Entidades.Manga">
+    <Position X="7.25" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAQAAAAAAAAABQAQAAA=</HashCode>
+      <FileName>Classes\Entidades\Manga.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Biblioteca.Interfaces.Iinformacoes">
+    <Position X="11.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Iinformacoes.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Biblioteca.Interfaces.IMovimentacao">
+    <Position X="11.5" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMovimentacao.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

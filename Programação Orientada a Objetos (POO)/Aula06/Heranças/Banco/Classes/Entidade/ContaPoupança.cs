@@ -34,6 +34,12 @@
         {
             Console.WriteLine($"O seu saldo atualizou para {SaldoDaConta}");
         }
-     
+             public override string ToString()
+        {
+            return "$Dados da conta:\n" +
+                $"\tTitular: {TitularDaConta}\n" +
+                $"\tNúmero: {NumeroDaConta}\n" +
+                $"\tSaldo: {SaldoDaConta:c}\n";
+        }
 	}
 }

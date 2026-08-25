@@ -52,5 +52,13 @@ namespace Banco.Classes.Entidade
         {
             SaldoDaConta += quantia;
         }
+
+        public override string ToString()
+        {
+            return "Dados da conta:\n" +
+                $"\tTitular: {TitularDaConta}\n" +
+                $"\tNúmero: {NumeroDaConta}\n" +
+                $"\tSaldo: {SaldoDaConta:c}\n";
+        }
     }
 }
