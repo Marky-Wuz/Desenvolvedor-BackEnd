@@ -125,8 +125,7 @@ void ConsultaConta(ContaContext conta)
                 break;
             case 4:
                 //sair
-                continuar = false;
-                break;
+                return;
             default:
                 Console.WriteLine("Opção invalida");
                 break;
