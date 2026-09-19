@@ -1,7 +1,5 @@
 using Cars.Classes.Animation;
 using Cars.Classes.Contextos;
-using Cars.Classes.Entidades;
-using Microsoft.IdentityModel.Tokens;
 using Cars.Classes.Contextos;
 using Cars.Classes.Services;
 
