@@ -1,4 +1,5 @@
 using SistemaERP.Classes.Contextos;
+using SistemaERP.Classes.Contextos;
 
 namespace SistemaERP
 {
@@ -13,14 +14,17 @@ namespace SistemaERP
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-
+            SQLitePCL.Batteries.Init();
             ContextoUsuario contexto = new ContextoUsuario();
+            contexto.Database.EnsureCreated();
+
+            ContextoUltimoUsuario usuario = new ContextoUltimoUsuario();
+            usuario.Database.EnsureCreated();
 
             if (TextarConexaoBanco())
             {
                 MessageBox.Show("Conexão sucedida!");
                 Application.Run(new Login());
-                contexto.Database.EnsureCreated();
             }
             else
             {
