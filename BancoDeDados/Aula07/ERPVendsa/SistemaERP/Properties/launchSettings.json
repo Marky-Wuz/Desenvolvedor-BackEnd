@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SistemaERP": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "string_de_conexao": "Host = dpg-daoqgcn40ujc7389oc90-a.oregon-postgres.render.com;Port = 5432;Database = dbfrangoback;Username = dbfrangoback_user;Password = gZOytzpigT8fcqCBGQHzJsvdrnClezNA;SSL Mode = Require;Trust Server Certificate = true;"
+      }
+    }
+  }
+}

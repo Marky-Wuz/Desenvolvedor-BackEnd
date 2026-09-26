@@ -210,6 +210,7 @@
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Font = new Font("Sylfaen", 15.75F, FontStyle.Bold | FontStyle.Italic);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             Margin = new Padding(5);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -217,7 +218,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             UseWaitCursor = true;
-            Load += Login_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

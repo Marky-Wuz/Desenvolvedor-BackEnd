@@ -116,6 +116,28 @@ namespace SistemaERP
 
         private void Login_Load(object sender, EventArgs e)
         {
+            ContextoUltimoUsuario ultimocontexto = new ContextoUltimoUsuario();
+            bool status = checkBox1.Checked;
+            var usuario = ultimocontexto.ultimoUsuario.FirstOrDefault(i => i.Id == 1);
+            if (status = true)
+            {
+                if (usuario != null)
+                {
+                    usuario.EsqueceuSenha = true;
+                    ultimocontexto.SaveChanges();
+                }
+                else
+                {
+                    usuario.EsqueceuSenha = false;
+                    ultimocontexto.SaveChanges();
+                }
+            }
+            else
+            {
+                usuario.EsqueceuSenha = false;
+                ultimocontexto.SaveChanges();
+                checkBox1.CheckState.Equals(false);
+            }
 
         }
     }

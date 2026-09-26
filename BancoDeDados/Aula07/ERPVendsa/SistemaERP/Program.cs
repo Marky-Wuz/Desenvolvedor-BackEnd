@@ -1,5 +1,7 @@
+using SistemaERP.Classes.Contexto;
 using SistemaERP.Classes.Contextos;
 using SistemaERP.Classes.Contextos;
+using SistemaERP.Telas;
 
 namespace SistemaERP
 {
@@ -18,13 +20,16 @@ namespace SistemaERP
             ContextoUsuario contexto = new ContextoUsuario();
             contexto.Database.EnsureCreated();
 
+            ContextoPessoa pessoa = new ContextoPessoa();
+            pessoa.Database.EnsureCreated();
+
             ContextoUltimoUsuario usuario = new ContextoUltimoUsuario();
             usuario.Database.EnsureCreated();
 
             if (TextarConexaoBanco())
             {
-                MessageBox.Show("Conexão sucedida!");
-                Application.Run(new Login());
+                MessageBox.Show("Conexão bem sucedida!");
+                Application.Run(new RegistroDeConta());
             }
             else
             {
@@ -36,7 +41,8 @@ namespace SistemaERP
         {
             try
             {
-                ContextoUsuario contexto = new ContextoUsuario();
+                // ContextoUsuario contexto = new ContextoUsuario();
+                ContextoPessoa contexto = new ContextoPessoa();
                 return contexto.Database.CanConnect();
             }
             catch (Exception e)

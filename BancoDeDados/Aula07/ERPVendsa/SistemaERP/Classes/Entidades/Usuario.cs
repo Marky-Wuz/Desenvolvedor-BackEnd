@@ -16,6 +16,9 @@
             Regra = regra;
         }
 
-
+        protected Usuario(string nomeDoUsuario)
+        {
+            NomeDoUsuario = nomeDoUsuario;
+        }
     }
 }
