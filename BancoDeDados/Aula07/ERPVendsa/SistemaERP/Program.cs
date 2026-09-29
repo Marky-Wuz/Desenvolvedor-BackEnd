@@ -28,8 +28,8 @@ namespace SistemaERP
 
             if (TextarConexaoBanco())
             {
-                MessageBox.Show("Conexão bem sucedida!");
-                Application.Run(new RegistroDeConta());
+               // MessageBox.Show("Conexão bem sucedida!");
+                Application.Run(new ERPVendas());
             }
             else
             {
