@@ -47,6 +47,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(584, 228);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // button2
             // 
@@ -106,7 +107,7 @@
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(674, 119);
+            radioButton1.Location = new Point(674, 132);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(88, 19);
             radioButton1.TabIndex = 7;

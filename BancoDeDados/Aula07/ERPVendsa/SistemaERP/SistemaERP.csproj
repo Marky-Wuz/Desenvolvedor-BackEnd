@@ -27,6 +27,8 @@
     </PackageReference>
     <PackageReference Include="Microsoft.WinForms.Designer.SDK" Version="1.6.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
+    <PackageReference Include="ReportViewerCore.NETCore" Version="15.1.33" />
+    <PackageReference Include="ReportViewerCore.WinForms" Version="15.1.33" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,6 +36,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="VendasDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>VendasDataSet.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -46,6 +53,13 @@
 
   <ItemGroup>
     <Folder Include="Classes\Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="VendasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VendasDataSet.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>

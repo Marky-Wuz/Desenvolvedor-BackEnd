@@ -39,6 +39,7 @@
             relátorioDeVendasToolStripMenuItem = new ToolStripMenuItem();
             editarPedidoDeVendasToolStripMenuItem = new ToolStripMenuItem();
             criarPedidoDeVendasToolStripMenuItem = new ToolStripMenuItem();
+            vendasToolStripMenuItem1 = new ToolStripMenuItem();
             usuáriosToolStripMenuItem = new ToolStripMenuItem();
             aprovaçãoDeUsuárioToolStripMenuItem = new ToolStripMenuItem();
             editarUsuárioToolStripMenuItem = new ToolStripMenuItem();
@@ -47,6 +48,8 @@
             deletarUsuárioToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
             dataGridView1 = new DataGridView();
+            label1 = new Label();
+            reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -93,7 +96,7 @@
             // 
             // vendasToolStripMenuItem
             // 
-            vendasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { consultaDePedidoDeVendasToolStripMenuItem, aprovaçãoDePdidoDeVendasToolStripMenuItem, relátorioDeVendasToolStripMenuItem, editarPedidoDeVendasToolStripMenuItem, criarPedidoDeVendasToolStripMenuItem });
+            vendasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { consultaDePedidoDeVendasToolStripMenuItem, aprovaçãoDePdidoDeVendasToolStripMenuItem, relátorioDeVendasToolStripMenuItem, editarPedidoDeVendasToolStripMenuItem, criarPedidoDeVendasToolStripMenuItem, vendasToolStripMenuItem1 });
             vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
             vendasToolStripMenuItem.Size = new Size(85, 29);
             vendasToolStripMenuItem.Text = "Vendas";
@@ -116,6 +119,7 @@
             relátorioDeVendasToolStripMenuItem.Name = "relátorioDeVendasToolStripMenuItem";
             relátorioDeVendasToolStripMenuItem.Size = new Size(354, 30);
             relátorioDeVendasToolStripMenuItem.Text = "Relátorio de vendas";
+            relátorioDeVendasToolStripMenuItem.Click += relátorioDeVendasToolStripMenuItem_Click;
             // 
             // editarPedidoDeVendasToolStripMenuItem
             // 
@@ -128,6 +132,12 @@
             criarPedidoDeVendasToolStripMenuItem.Name = "criarPedidoDeVendasToolStripMenuItem";
             criarPedidoDeVendasToolStripMenuItem.Size = new Size(354, 30);
             criarPedidoDeVendasToolStripMenuItem.Text = "Criar pedido de vendas";
+            // 
+            // vendasToolStripMenuItem1
+            // 
+            vendasToolStripMenuItem1.Name = "vendasToolStripMenuItem1";
+            vendasToolStripMenuItem1.Size = new Size(354, 30);
+            vendasToolStripMenuItem1.Text = "Vendas";
             // 
             // usuáriosToolStripMenuItem
             // 
@@ -184,13 +194,33 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(240, 334);
             dataGridView1.TabIndex = 2;
-//            dataGridView1.CellContentClick += this.dataGridView1_CellContentClick;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = SystemColors.ButtonHighlight;
+            label1.Font = new Font("SWRomnt", 10F);
+            label1.Location = new Point(0, 94);
+            label1.Name = "label1";
+            label1.Size = new Size(264, 18);
+            label1.TabIndex = 3;
+            label1.Text = "Usuário Ativos ou Pendentes.";
+            // 
+            // reportViewer1
+            // 
+            reportViewer1.Location = new Point(0, 0);
+            reportViewer1.Name = "ReportViewer";
+            reportViewer1.ServerReport.BearerToken = null;
+            reportViewer1.Size = new Size(396, 246);
+            reportViewer1.TabIndex = 0;
             // 
             // ERPVendas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1084, 513);
+            Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(pictureBox1);
             Controls.Add(menuStrip1);
@@ -231,5 +261,8 @@
         private ToolStripMenuItem deletarUsuárioToolStripMenuItem;
         private PictureBox pictureBox1;
         private DataGridView dataGridView1;
+        private Label label1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private ToolStripMenuItem vendasToolStripMenuItem1;
     }
 }
